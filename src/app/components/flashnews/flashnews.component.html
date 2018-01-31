@@ -1,0 +1,14 @@
+<div class="card mb-3">
+    <!-- http://c.files.bbci.co.uk/105BC/production/_99440076_loganpaul.png -->
+    <img class="card-img-top" src="{{ news.thumbnail }}" alt="Card image cap">
+    <div class="card-block padding-class">
+      <h4 class="card-title">{{ news.title }}</h4>
+      <p class="card-text">{{ news.description }}</p>
+      <p class="card-text">
+        <small class="text-muted">
+        {{ news.pubdate }}
+        </small>
+      </p>
+      <a href="{{ news.link }}"> More </a>
+    </div>
+</div>

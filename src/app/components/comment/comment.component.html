@@ -1,0 +1,13 @@
+<form #commentForm="ngForm" (ngSubmit)="processForm()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" 
+            placeholder="Enter name" name="name"
+            ngModel required>
+    </div>
+    <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea class="form-control" id="comment" placeholder="Enter comment" name="comment" ngModel required></textarea>
+    </div> 
+    <button type="submit" [disabled]="commentForm.invalid" class="btn btn-outline-primary btn-block">Post</button>
+</form>
