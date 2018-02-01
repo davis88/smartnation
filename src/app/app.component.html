@@ -1,25 +1,27 @@
 <div class="container">
 
     <!-- header -->
-    <div class="row">
-       <div class="col">
-           <h1>News App</h1>
-        </div>
+    <div class="row myheader">
+       <div class="col-md-12">
+            <h1>
+                <a 
+                [routerLink]="['/home']"
+                [routerLinkActive]="['selected']"
+                [routerLinkActiveOptions]="['{exact: true}']"
+                >Home</a>
+                <a 
+                [routerLink]="['/live']"
+                [routerLinkActive]="['selected']"
+                [routerLinkActiveOptions]="['{exact: true}']"
+                >Live</a>
+
+                News App
+            </h1>
+       </div>
     </div>
 
     <!-- content -->
-    <div class="row">
-        <div class="col-md-8">
-            
-            <app-flashnews [news]="news"> 
-
-            </app-flashnews>
-
-        </div>
-        <div class="col-md-4">
-
-            <app-comment  (commentToPost)="commentPosted($event)"></app-comment>
-        </div>
-    </div>
+    <router-outlet></router-outlet>
+    
 
 </div>

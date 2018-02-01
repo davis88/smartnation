@@ -3,3 +3,19 @@ h1{
     background-color:#c0d1d1;
     color: grey
 }
+
+a{
+    float: left;
+    padding-right: 10px;
+    color: grey
+}
+
+.selected {
+    color: white;
+    font-weight: bold;
+}
+
+.myheader {
+    padding:5px;
+    /* margin:10px */
+}

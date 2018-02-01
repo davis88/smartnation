@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-sm-8">
+                
+        <app-flashnews [news]="news"> 
+
+        </app-flashnews>
+
+    </div>
+    <div class="col-sm-4">
+
+        <app-comment  (commentToPost)="commentPosted($event)"></app-comment>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="d-flex flex-wrap">
+    
+  <div class="col-md-6" *ngFor="let news of sample" style="padding:5px">
+      <app-flashnews *ngIf="news.thumbnail"  [news]="news"></app-flashnews>
+    </div>
+</div>
